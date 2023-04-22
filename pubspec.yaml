@@ -1,0 +1,65 @@
+name: flutter_assignment_project
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  #Value equality
+  equatable: ^2.0.0
+  #for Either
+  dartz: ^0.10.1
+  #for testing - comparing lists
+  collection: ^1.17.0
+  location: ^4.4.0
+  http: ^0.13.5
+  get_it: ^7.2.0
+  flutter_bloc: ^8.1.2
+  flutter_svg: ^2.0.4
+  url_launcher: ^6.1.10
+  google_maps_flutter: ^2.2.5
+  intl: ^0.18.0
+  cached_network_image: ^3.2.3
+  connectivity_plus: ^3.0.4
+  #change notifier
+  provider: ^6.0.5
+  shared_preferences: ^2.0.20
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mocktail: ^0.3.0
+
+flutter:
+  uses-material-design: true
+  fonts: 
+    - family: GothamSSm
+      fonts: 
+        - asset: lib/assets/Fonts/GothamSSm/GothamSSm-Bold.otf
+          weight: 700
+        - asset: lib/assets/Fonts/GothamSSm/GothamSSm-Medium.otf
+          weight: 500
+        - asset: lib/assets/Fonts/GothamSSm/GothamSSm-Book.otf
+          weight: 400
+        - asset: lib/assets/Fonts/GothamSSm/GothamSSm-Light.otf
+          weight: 300
+  assets:
+    - lib/assets/Icons/ic_dtt.svg
+    - lib/assets/Icons/ic_bed.svg
+    - lib/assets/Icons/ic_bath.svg
+    - lib/assets/Icons/ic_location.svg
+    - lib/assets/Icons/ic_layers.svg
+    - lib/assets/Icons/ic_back.svg
+    - lib/assets/Icons/ic_search.svg
+    - lib/assets/Icons/ic_home.svg
+    - lib/assets/Icons/ic_info.svg
+    - lib/assets/Images/search_state_empty.png
+    - lib/assets/Images/no_internet.svg
+    - lib/assets/Images/dtt_banner/mdpi/dtt_banner.png
+    - lib/assets/Images/dtt_banner/ldpi/dtt_banner.png
+    - lib/assets/Icons/ic_close.svg

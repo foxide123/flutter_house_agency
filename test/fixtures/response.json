@@ -1,0 +1,28 @@
+[{
+    "id": 2,
+    "image": "/uploads/house1.jpg",
+    "price": 285000,
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "size": 275,
+    "description": "Description",
+    "zip": "1034 ZH",
+    "city": "Amsterdam",
+    "latitude": 52,
+    "longitude": 5,
+    "createdDate": "2020-05-07"
+},
+{
+    "id": 3,
+    "image": "/uploads/house2.jpg",
+    "price": 969000,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "size": 153,
+    "description": "Description 2",
+    "zip": "1016 BV",
+    "city": "Amsterdam",
+    "latitude": 52,
+    "longitude": 5,
+    "createdDate": "2020-05-07"
+}]
