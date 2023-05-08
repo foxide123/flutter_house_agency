@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_assignment_project/shared/distance_calculator.dart';
-import 'package:flutter_assignment_project/shared/permission_handler.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/distance_to_house_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/user_location_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/distance_to_house_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/user_location_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/shared/distance_calculator.dart';
+import 'package:flutter_assignment_project/real_estate_app/shared/permission_handler.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:location/location.dart';
 import 'package:mocktail/mocktail.dart';

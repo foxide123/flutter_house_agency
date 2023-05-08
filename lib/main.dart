@@ -1,14 +1,18 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_assignment_project/assets/colors.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/presentation/widgets/offline_widget.dart';
+import 'package:flutter_assignment_project/real_estate_app/bloc/bloc/house_list_bloc.dart';
+import 'package:flutter_assignment_project/real_estate_app/presentation/widgets/error_widget.dart';
+import 'package:flutter_assignment_project/real_estate_app/presentation/widgets/favorite_page/favorite_notifier.dart';
+import 'package:flutter_assignment_project/real_estate_app/presentation/widgets/house_list_page/house_list_page.dart';
+import 'package:flutter_assignment_project/real_estate_app/presentation/widgets/offline_widget.dart';
+import 'package:flutter_assignment_project/real_estate_app/presentation/widgets/splash_screen_widget.dart';
+import 'assets/colors.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
-import 'user_stories/house_list/presentation/bloc/bloc/house_list_bloc.dart';
 import 'dependency_injection.dart';
-import 'user_stories/house_list/presentation/widgets/widgets.dart';
 import 'dependency_injection.dart' as di;
+import 'package:sizer/sizer.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,16 +23,23 @@ void main() async {
 class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return Sizer(
+      builder: (context, orientation, deviceType){
+        return MaterialApp(
       theme: ThemeData(scaffoldBackgroundColor: DesignSystemColors.lightGray),
-      home: MultiBlocProvider(
+      home: MultiProvider(
         providers: [
+          ChangeNotifierProvider<FavoriteHouses>(
+            create: (context) => FavoriteHouses(),
+          ),
           BlocProvider<HouseListBloc>(
           create: (context) => sl<HouseListBloc>(),
         ),
         ],
         child:MainAppContent(),
       ),
+    );
+      }
     );
   }
 }
@@ -78,11 +89,13 @@ class _MainAppContentState extends State<MainAppContent> {
                 
               } else if(state is FavoriteAdded){
    
-              } else if(state is FavoritesRetrieved){
+              } else if(state is FavoriteRemoved){
+                
+              }else if(state is FavoritesRetrieved){
                 
               }
               else if(state is NoInternet){
-                previousState = OfflineWidget(isOffline: true);
+                //previousState = OfflineWidget(isOffline: true);
               }
               else {
                 previousState = DisplayError(message: 'Unknown state error');

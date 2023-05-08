@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_assignment_project/shared/distance_calculator.dart';
-import 'package:flutter_assignment_project/shared/failures.dart';
+import 'package:flutter_assignment_project/real_estate_app/domain/failures/distance_calc_failure.dart';
+import 'package:flutter_assignment_project/real_estate_app/shared/distance_calculator.dart';
+import 'package:flutter_assignment_project/real_estate_app/shared/failures.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main(){

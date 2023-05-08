@@ -1,4 +1,4 @@
-import 'package:flutter_assignment_project/user_stories/house_list/domain/models/house_model.dart';
+import 'package:flutter_assignment_project/real_estate_app/domain/models/house_model.dart';
 
 final tMockHouseModel = HouseModel(
       bedrooms: 5,

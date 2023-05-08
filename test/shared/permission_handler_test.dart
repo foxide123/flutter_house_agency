@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_assignment_project/shared/permission_handler.dart';
+import 'package:flutter_assignment_project/real_estate_app/shared/permission_handler.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:location/location.dart';
 import 'package:mocktail/mocktail.dart';

@@ -137,6 +137,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.2"
+  csslib:
+    dependency: transitive
+    description:
+      name: csslib
+      sha256: b36c7f7e24c0bdf1bf9a3da461c837d1de64b9f8beb190c9011d8c72a3dfd745
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.17.2"
   dartz:
     dependency: "direct main"
     description:
@@ -272,6 +280,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  google_maps:
+    dependency: transitive
+    description:
+      name: google_maps
+      sha256: eb20a162d642599a05179e2d155b9e803899cb377764fdec9044fa7fa474bfb8
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.2.0"
   google_maps_flutter:
     dependency: "direct main"
     description:
@@ -304,6 +320,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.6"
+  google_maps_flutter_web:
+    dependency: "direct main"
+    description:
+      name: google_maps_flutter_web
+      sha256: "33cdd42a83620859f5bd573f9eede550a7401457375b89629d12921751c7bda5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.0+8"
+  html:
+    dependency: transitive
+    description:
+      name: html
+      sha256: "79d498e6d6761925a34ee5ea8fa6dfef38607781d2fa91e37523474282af55cb"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.15.2"
   http:
     dependency: "direct main"
     description:
@@ -352,6 +384,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.5"
+  js_wrapping:
+    dependency: transitive
+    description:
+      name: js_wrapping
+      sha256: e385980f7c76a8c1c9a560dfb623b890975841542471eade630b2871d243851c
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.4"
   lints:
     dependency: transitive
     description:
@@ -464,6 +504,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.2"
+  open_settings:
+    dependency: "direct main"
+    description:
+      name: open_settings
+      sha256: ceb716dc476352aecb939805b6fa6a593168a5ed1abfe3caa022b6b1715e94ae
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.2"
   package_config:
     dependency: transitive
     description:
@@ -608,6 +656,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.27.7"
+  sanitize_html:
+    dependency: transitive
+    description:
+      name: sanitize_html
+      sha256: "0a445f19bbaa196f5a4f93461aa066b94e6e025622eb1e9bc77872a5e25233a5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   shared_preferences:
     dependency: "direct main"
     description:
@@ -696,6 +752,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.3"
+  sizer:
+    dependency: "direct main"
+    description:
+      name: sizer
+      sha256: d2b3cb6cbc4a637f508dacd786bae55df31e5fc088044248a43e4fd1e050c117
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.15"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -821,6 +885,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.1"
+  universal_io:
+    dependency: transitive
+    description:
+      name: universal_io
+      sha256: "06866290206d196064fd61df4c7aea1ffe9a4e7c4ccaa8fcded42dd41948005d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.0"
   url_launcher:
     dependency: "direct main"
     description:

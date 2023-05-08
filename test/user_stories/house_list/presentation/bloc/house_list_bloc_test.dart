@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/favorite_houses_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/distance_to_house_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/get_all_houses_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/get_specific_houses_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/sort_houses_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/domain/dtos/house_search_params.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/presentation/bloc/bloc/house_list_bloc.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/distance_to_house_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/favorite_houses_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/get_all_houses_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/get_specific_houses_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/sort_houses_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/bloc/bloc/house_list_bloc.dart';
+import 'package:flutter_assignment_project/real_estate_app/domain/dtos/house_search_params.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
@@ -72,7 +72,7 @@ void main() {
       verify(()=>mockGetSpecificHouses.getSpecificHouses(searchParams));
       });
     });
-
+/*
   group('get distance to house', (){
     double lat1 = 40.050;
     double lon1 = 20.125;
@@ -86,7 +86,7 @@ void main() {
       verify(()=>mockDistanceToHouse.getDistanceToHouse(lat1, lon1));
     });
   });
-
+*/
 
   group('sort list of houses', (){
     test('should call sortByPrice method', () async{

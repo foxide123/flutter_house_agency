@@ -1,8 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:dartz/dartz.dart';
-import 'package:flutter_assignment_project/shared/failures.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/sort_houses_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/domain/models/house_model.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/sort_houses_logic.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 

@@ -1,17 +1,16 @@
-import 'package:flutter_assignment_project/shared/distance_calculator.dart';
-import 'package:flutter_assignment_project/shared/json_mapper.dart';
-import 'package:flutter_assignment_project/shared/permission_handler.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/data_interfaces/i_favorite_repository.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/data_interfaces/i_houses_repository.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/favorite_houses_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/distance_to_house_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/get_all_houses_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/get_specific_houses_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/sort_houses_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/user_location_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/data/favorite_repository_impl.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/data/houses_repository_impl.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/presentation/bloc/bloc/house_list_bloc.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/data_interfaces/i_favorite_repository.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/data_interfaces/i_houses_repository.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/distance_to_house_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/favorite_houses_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/get_all_houses_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/get_specific_houses_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/sort_houses_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/user_location_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/bloc/bloc/house_list_bloc.dart';
+import 'package:flutter_assignment_project/real_estate_app/data/favorite_repository_impl.dart';
+import 'package:flutter_assignment_project/real_estate_app/data/houses_repository_impl.dart';
+import 'package:flutter_assignment_project/real_estate_app/shared/distance_calculator.dart';
+import 'package:flutter_assignment_project/real_estate_app/shared/permission_handler.dart';
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
 import 'package:location/location.dart';
@@ -55,7 +54,7 @@ Future<void> init() async {
   //shared
   sl.registerLazySingleton(() => DistanceCalculator());
   sl.registerLazySingleton(() => PermissionHandler());
-  sl.registerLazySingleton(() => JSONMapper());
+  //sl.registerLazySingleton(() => JSONMapper());
 
   //external
   final sharedPreferences = await SharedPreferences.getInstance();

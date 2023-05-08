@@ -1,11 +1,11 @@
 import 'package:collection/collection.dart';
 import 'package:dartz/dartz.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/get_specific_houses_logic.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/domain/dtos/house_search_params.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/domain/models/house_model.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/data_interfaces/i_houses_repository.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/get_specific_houses_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/domain/dtos/house_search_params.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/data_interfaces/i_houses_repository.dart';
+
 
 import '../../../fixtures/mock_house_model.dart';
 

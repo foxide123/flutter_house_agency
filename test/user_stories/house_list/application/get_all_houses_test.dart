@@ -1,7 +1,7 @@
 import 'package:collection/collection.dart';
 import 'package:dartz/dartz.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/data_interfaces/i_houses_repository.dart';
-import 'package:flutter_assignment_project/user_stories/house_list/application/logic/get_all_houses_logic.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/data_interfaces/i_houses_repository.dart';
+import 'package:flutter_assignment_project/real_estate_app/application/logic/get_all_houses_logic.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
